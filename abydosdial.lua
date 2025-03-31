@@ -1,4 +1,5 @@
 local interface = peripheral.find("advanced_crystal_interface") or peripheral.find("crystal_interface") or peripheral.find("basic_interface")
+local isOpen = interface.isWormholeOpen
 local symbol1 = 26
 local symbol2 = 6
 local symbol3 = 14
@@ -96,4 +97,8 @@ interface.closeChevron()
 --locked
 print("Final Chevron Locked!")
 sleep(1)
---print("Wormhole established")
+if isOpen then
+
+  print("Wormhole established")
+
+end
