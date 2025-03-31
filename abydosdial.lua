@@ -36,7 +36,7 @@ sleep(1)
 print("Dialing Chevron 3...")
 
 interface.rotateClockwise(symbol3)
-sleep(5)
+sleep(7)
 interface.openChevron()
 interface.encodeChevron()
 sleep(1)
