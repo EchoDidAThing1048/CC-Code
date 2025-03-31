@@ -47,7 +47,7 @@ sleep(1)
 print("Dialing Chevron 4...")
 
 --Next Paste Starts here
-interface.rotateClockwise(symbol4)
+interface.rotateAntiClockwise(symbol4)
 sleep(5)
 interface.openChevron()
 interface.encodeChevron()
@@ -73,7 +73,7 @@ sleep(1)
 print("Dialing Chevron 6...")
 
 --Next Paste Starts here
-interface.rotateClockwise(symbol6)
+interface.rotateAntiClockwise(symbol6)
 sleep(5)
 interface.openChevron()
 interface.encodeChevron()
@@ -87,7 +87,7 @@ print("Dialing Final Chevron...")
 
 --Next Paste Starts here
 interface.rotateClockwise(symbol7)
-sleep(5)
+sleep7)
 interface.openChevron()
 interface.encodeChevron()
 sleep(1)
@@ -96,4 +96,4 @@ interface.closeChevron()
 --locked
 print("Final Chevron Locked!")
 sleep(1)
-print("Wormhole established")
+--print("Wormhole established")
