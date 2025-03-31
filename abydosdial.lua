@@ -48,7 +48,7 @@ print("Dialing Chevron 4...")
 
 --Next Paste Starts here
 interface.rotateClockwise(symbol4)
-sleep(7)
+sleep(5)
 interface.openChevron()
 interface.encodeChevron()
 sleep(1)
