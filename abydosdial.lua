@@ -23,7 +23,7 @@ print("Chevron 1 Locked")
 sleep(1)
 print("Dialing Chevron 2...")
 
-interface.rotateClockwise(symbol2)
+interface.rotateAntiClockwise(symbol2)
 sleep(5)
 interface.openChevron()
 interface.encodeChevron()
@@ -88,7 +88,7 @@ print("Dialing Final Chevron...")
 
 --Next Paste Starts here
 interface.rotateClockwise(symbol7)
-sleep7)
+sleep(7)
 interface.openChevron()
 interface.encodeChevron()
 sleep(1)
