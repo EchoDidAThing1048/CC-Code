@@ -1,28 +1,49 @@
+-- Random
+local version = "1.1.0"
+local tardisID = "ce9e7f33-1dae-417d-9994-b8e49e7d3f4b"
+-- Save file load/save stuff
+--local save = fs.open("save.txt", "w")
+--save.write("test")
+--save.close --(trying to make a save system for victims)
+
+
+
+
+
+
+
+
 -- Menu Shit
 local function printMenu()
     term.clear()
     term.setCursorPos(1, 1)
     print("=== Welcome! ===")
+    sleep(1)
     print("=== Who do you want to fly to? ===")
     print("1. Divine590")
     print("2. EchoInfinite")
     print("3. GateMC")
-    --print("4. Username")
-    print("4. Exit")
+    print("4. Settings/Debug Info")
+    print("5. Exit")
     print("=== Service by Echo ===")
     write("Select an option: ")
 end
 
 local function handleChoice(choice)
     if choice == "1" then
-        exec("execute as Divine590 at Divine590 run ait summon 47a67b68-f6d0-4906-9c24-eae690de4efd ~ ~ ~")
+        exec("execute as Divine590 at Divine590 run ait summon " .. tardisID .. " ~ ~ ~")
     elseif choice == "2" then
-        exec("execute as EchoInfinite at EchoInfinite run ait summon 47a67b68-f6d0-4906-9c24-eae690de4efd ~ ~ ~")
+        exec("execute as EchoInfinite at EchoInfinite run ait summon " .. tardisID ..  " ~ ~ ~")
     elseif choice == "3" then
-        exec("execute as GateMC at GateMC run ait summon 47a67b68-f6d0-4906-9c24-eae690de4efd ~ ~ ~")
-    --elseif choice == "4" then
-        --exec("execute as Username at Username run ait summon 47a67b68-f6d0-4906-9c24-eae690de4efd ~ ~ ~") --Example on how to add a new victim
-    elseif choice == "4" then --add one to this number everytime you add a new victim
+        exec("execute as GateMC at GateMC run ait summon " .. tardisID ..  " ~ ~ ~")
+    elseif choice == "4" then
+        term.clear()
+        term.setCursorPos(1, 1)
+        print("=== Settings ===")
+        print("Version " .. version .. " present")
+        print("Current TARDIS-ID: " .. tardisID .. "")
+        return false
+    elseif choice == "5" then
         print("Goodbye!")
         return false
     else
@@ -39,3 +60,4 @@ while running do
     running = handleChoice(choice)
     sleep(1)
 end
+
