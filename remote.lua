@@ -42,6 +42,21 @@ local function printSettings() --SETTINGS
     write("Select an option: ")
 end
 
+local function handleSettingChoice(choice) --SETTINGS HANDLER
+    if choice == "1" then
+        print("W.I.P Feature")
+    elseif choice == "2" then
+        print("W.I.P Feature")
+    elseif choice == "3" then
+        print("W.I.P Feature")
+    elseif choice == "4" then
+        return false
+    else
+        print("Invalid choice. Please try again.")
+    end
+    return true
+end
+
 local function handleChoice(choice) --MAIN HANDLER
     if choice == "1" then
         exec("execute as Divine590 at Divine590 run ait summon " .. tardisID .. " ~ ~ ~")
@@ -66,20 +81,6 @@ local function handleChoice(choice) --MAIN HANDLER
     return true
 end
 
-local function handleSettingChoice(choice) --SETTINGS HANDLER
-    if choice == "1" then
-        print("W.I.P Feature")
-    elseif choice == "2" then
-        print("W.I.P Feature")
-    elseif choice == "3" then
-        print("W.I.P Feature")
-    elseif choice == "4" then
-        return false
-    else
-        print("Invalid choice. Please try again.")
-    end
-    return true
-end
 
 local running = true -- MAIN PRINT
 while running do
@@ -88,3 +89,4 @@ while running do
     running = handleChoice(choice)
     sleep(1)
 end
+
