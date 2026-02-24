@@ -8,7 +8,7 @@ local symbol5 = 11
 local symbol6 = 29
 local symbol7 = 0
 
-print("Dialing Chevron 1...")
+print("Chevron 1 Encoded...")
 sleep(1)
 
 interface.rotateClockwise(symbol1)
@@ -21,7 +21,7 @@ interface.closeChevron()
 --locked
 print("Chevron 1 Locked")
 sleep(1)
-print("Dialing Chevron 2...")
+print("Chevron 2 Encoded...")
 
 interface.rotateAntiClockwise(symbol2)
 sleep(5)
@@ -33,7 +33,7 @@ interface.closeChevron()
 --locked
 print("Chevron 2 Locked")
 sleep(1)
-print("Dialing Chevron 3...")
+print("Chevron 3 Encoded...")
 
 interface.rotateClockwise(symbol3)
 sleep(7)
@@ -45,7 +45,7 @@ interface.closeChevron()
 --locked
 print("Chevron 3 Locked")
 sleep(1)
-print("Dialing Chevron 4...")
+print("Chevron 4 Encoded...")
 
 --Next Paste Starts here
 interface.rotateAntiClockwise(symbol4)
@@ -58,7 +58,7 @@ interface.closeChevron()
 --locked
 print("Chevron 4 Locked")
 sleep(1)
-print("Dialing Chevron 5...")
+print("Chevron 5 Encoded...")
 
 --Next Paste Starts here
 interface.rotateClockwise(symbol5)
@@ -71,7 +71,7 @@ interface.closeChevron()
 --locked
 print("Chevron 5 Locked")
 sleep(1)
-print("Dialing Chevron 6...")
+print("Chevron 6 Encoded...")
 
 --Next Paste Starts here
 interface.rotateAntiClockwise(symbol6)
@@ -84,7 +84,7 @@ interface.closeChevron()
 --locked
 print("Chevron 6 Locked")
 sleep(1)
-print("Dialing Final Chevron...")
+print("Chevron 7 Encoded...")
 
 --Next Paste Starts here
 interface.rotateClockwise(symbol7)
@@ -95,10 +95,10 @@ sleep(1)
 interface.closeChevron()
 
 --locked
-print("Final Chevron Locked!")
+print("Chevron 7 Locked")
 sleep(1)
 if isOpen then
 
-  print("Wormhole established")
+  print("Wormhole Established")
 
 end
